@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Next Level Gaming &amp; Esports Arena</title>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- Accordion CSS -->
+    <link rel="stylesheet" href="CSS/accordion.css">
+
+    <!--The Map link-->
+    <link rel="stylesheet" href="CSS/map.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1><img src="images/logo.png" alt="Gaming Arena" width="3%">Next Level Gaming &amp; Esports Arena</h1>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About us</a> |
+            <a href="packages.html">Packages</a> |
+            <a href="experiences.html">Experiences</a> |
+            <a href="booking.html">Book Now</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h2>About Us</h2>
+        <img src="images/about-person.png" alt="Modern gaming arena" width="30%">
+
+        <p>Next Level Gaming &amp; Esports Arena is a modern entertainment venue created for gamers of all ages.</p>
+
+        <p><strong>Established in 2023 by Jason Naidoo, the arena provides access
+                to high-performance gaming equipment, esports
+                competitions and social gaming experiences.</strong></p>
+
+        <!-- Accordion Section Container -->
+        <div class="accordion-container">
+
+            <!-- Accordion Item 1: Our Purpose -->
+            <div class="accordion-item">
+                <div class="accordion-header">Our Purpose</div>
+                <div class="accordion-content">
+                    <p><strong>We cater for casual players, competitive gamers, schools, gaming clubs and corporate
+                            groups.</strong></p>
+                </div>
+            </div>
+
+            <!-- Accordion Item 2: Events -->
+            <div class="accordion-item">
+                <div class="accordion-header">Events</div>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Gaming events</strong></li>
+                        <li><strong>Esports tournaments</strong></li>
+                        <li><strong>Birthday parties</strong></li>
+                        <li><strong>School outings</strong></li>
+                        <li><strong>Corporate team-building events</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Accordion Item 3: Location -->
+            <div class="accordion-item">
+                <div class="accordion-header">Location</div>
+                <div class="accordion-content">
+                    <p><strong>Johannesburg, South Africa</strong></p>
+
+                    <!-- Map & Location Cards Section -->
+                    <h2>Our Locations</h2>
+                    <div id="map"></div>
+                    <div id="location-card"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p><strong>Next Level Gaming &amp; Esports Arena</strong></p>
+        <p><strong>Johannesburg, South Africa | Established 2023</strong></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="JavaScript/accordion.js"></script>
+
+    <!--Global Script-->
+    <script src="JavaScript/script.js"></script>
+
+    <!-- Leaflet JS Library (Must load before map.js) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!--Map script-->
+    <script src="JavaScript/map.js"></script>
+
+</body>
+
+</html>

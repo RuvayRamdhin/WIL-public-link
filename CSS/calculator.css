@@ -1,0 +1,15 @@
+/*Fee Calculator styling*/
+.fee-calculator {
+    background-color: #162035;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #00c4cc;
+    margin-bottom: 20px;
+}
+
+.total-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00c4cc;
+    margin-bottom: 0;
+}

@@ -1,0 +1,302 @@
+/*CSS reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Styling the whole body of the website*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #0e1525;
+    margin: 0;
+}
+
+/*Styling the header and footer*/
+header {
+    background-color: #162035;
+    padding: 1rem;
+    border-bottom: 2px solid #22304c;
+    text-align: center;
+}
+
+footer {
+    background-color: #162035;
+    padding: 1rem;
+    border-top: 2px solid #22304c;
+    margin-top: auto;
+}
+
+/*Controling the main content width*/
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+a {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: #00c4cc;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+ul {
+    margin-left: 1rem;
+}
+
+/*The genreal styling for all the buttons*/
+button,
+input[type="submit"],
+input[type="reset"] {
+    width: fit-content;
+    height: auto;
+    margin-left: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    background-color: #00c4cc;
+    color: #0e1525;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #ffffff;
+}
+
+/*Typography*/
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    color: #00c4cc;
+    margin-bottom: 0.8rem;
+    margin-top: 1rem;
+}
+
+h4 {
+    color: #00c4cc;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+p {
+    font-family: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #8899a6;
+}
+
+/*Styling everything in a specific ways*/
+header img {
+    border-radius: 0.4rem;
+    margin-bottom: -1rem;
+    width: 75px;
+}
+
+main img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border: 3px solid #22304c;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    background-color: #162035;
+    object-fit: cover;
+}
+
+/*Form styling (this is used in the booking page)*/
+form {
+    background-color: #162035;
+    border: 1px solid #22304c;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.form-section {
+    margin-bottom: -2rem;
+}
+
+label {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea {
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #0e1525;
+    border: 1px solid #22304c;
+    border-radius: 0.4rem;
+    padding: 0.6em;
+    font-family: inherit;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #00c4cc;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+.package-options label {
+    font-weight: bold;
+    color: #8899a6;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.package-options input[type="radio"] {
+    margin-right: 0.5rem;
+    accent-color: #00c4cc;
+}
+
+/*Styling the table on the index.html page*/
+table {
+    width: 100%;
+    max-width: 450px;
+    background-color: #162035;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    border: 1px solid #22304c;
+}
+
+th,
+td {
+    padding: 0.8rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid #22304c;
+}
+
+th {
+    background-color: #162035;
+    color: #00c4cc;
+    font-weight: bold;
+}
+
+td {
+    color: #8899a6;
+}
+
+footer p {
+    margin: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #8899a6;
+}
+
+footer strong {
+    color: #ffffff;
+}
+
+/*Styling it for a tablet responsiveness*/
+@media screen and (max-width: 760px) {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    main {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    main img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+/*Styling for the Mobile responsiveness*/
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        flex-direction: column;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    textarea {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    button,
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
